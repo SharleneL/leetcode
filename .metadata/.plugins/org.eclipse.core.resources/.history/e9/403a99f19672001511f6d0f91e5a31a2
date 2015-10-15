@@ -1,0 +1,11 @@
+
+public class oc14_234 {
+
+	private class ListNode{
+		int val;
+		ListNode next;
+		public ListNode(int val){
+			this.val = val;
+		}
+	}
+}

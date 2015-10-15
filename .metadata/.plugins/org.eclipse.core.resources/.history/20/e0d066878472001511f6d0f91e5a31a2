@@ -1,0 +1,33 @@
+
+public class oct14_19 {
+	private class ListNode{
+		int val;
+		ListNode next;
+		
+		private ListNode(int val){
+			this.val = val;
+		}
+	}
+	
+	public static void main(String[] args){
+		// test goes here
+	}
+	
+	public ListNode removeNthFromEnd(ListNode head, int n) {
+        if(head==null)
+        	return null;
+        ListNode fast = head;
+        ListNode slow = head;
+        
+        // move fast node to the nth position
+        for(int i=0; i<n; i++){
+        	fast = fast.next;
+        	if(fast == null)		// if the length of list < n
+        		return null;
+        }
+        
+        while(fast != null){
+        	
+        }
+    }
+}

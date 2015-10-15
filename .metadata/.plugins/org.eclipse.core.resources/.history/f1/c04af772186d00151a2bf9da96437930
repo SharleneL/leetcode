@@ -1,0 +1,10 @@
+
+public class oct07_112 {
+    public boolean hasPathSum(TreeNode root, int sum) {
+        boolean result = false;
+        if(root==null)
+        	return result;
+        
+        // process current node
+    }
+}

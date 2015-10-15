@@ -1,5 +1,9 @@
 /*
  * NMD cannot pass. What ghost QAQ
+ * s.replace() 和 s.replaceAll()的区别
+ * java中 (int)3/2 = 1
+ * s.charAt(index)
+ * scanner.next()输入的是next token，也就是空格之前的所有；scanner.nextLine()输入的是下一行，包括空格
  * */
 
 import java.util.Scanner;

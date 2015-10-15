@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;oct14_147&apos; to &apos;oct14_147_undone&apos;&#x0A;- Original project: &apos;LeetCodeLinkedList_Medium&apos;&#x0A;- Original element: &apos;oct14_147&apos;&#x0A;- Renamed element: &apos;oct14_147_undone&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;oct14_147&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{oct14_147.java[oct14_147" matchStrategy="1" name="oct14_147_undone" qualified="false" references="true" similarDeclarations="false" stamp="1444854409394" textual="false" version="1.0"/>
+</session>

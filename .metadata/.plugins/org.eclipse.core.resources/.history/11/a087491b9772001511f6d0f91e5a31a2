@@ -1,0 +1,19 @@
+
+public class oc14_234 {
+
+	private class ListNode{
+		int val;
+		ListNode next;
+		public ListNode(int val){
+			this.val = val;
+		}
+	}
+	
+	public static void main(String[] args){
+		// test goes here
+	}
+	
+    public boolean isPalindrome(ListNode head) {
+        if(head==null)
+    }
+}

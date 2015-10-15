@@ -1,3 +1,7 @@
+/*
+ * 从后往前算，这样上一行前面算过的不会被覆盖
+ * 注意最重要的那一行：size－2那一行
+ * */
 import java.util.ArrayList;
 import java.util.Scanner;
 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;sep7_easy38&apos; to &apos;sep7_easy38_unsolved&apos;&#x0A;- Original project: &apos;LeetCodeString_Easy&apos;&#x0A;- Original element: &apos;sep7_easy38&apos;&#x0A;- Renamed element: &apos;sep7_easy38_unsolved&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;sep7_easy38&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{sep7_easy38.java[sep7_easy38" matchStrategy="1" name="sep7_easy38_unsolved" qualified="false" references="true" similarDeclarations="false" stamp="1441662087341" textual="false" version="1.0"/>
+</session>

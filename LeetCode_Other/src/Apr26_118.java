@@ -1,3 +1,7 @@
+/*
+ * Java: how to read input using
+ * */
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

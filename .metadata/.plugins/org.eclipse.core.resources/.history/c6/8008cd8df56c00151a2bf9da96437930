@@ -1,0 +1,23 @@
+
+public class oct07_101 {
+
+	public static class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+		
+		private TreeNode(int val) {
+			this.val = val;
+		}
+	}
+	
+	public static void main(String[] args) {
+		// test goes here
+	}
+	
+    public boolean isSymmetric(TreeNode root) {
+        // 1. when to stop
+    	if(root = null)
+    		return false;
+    }
+}

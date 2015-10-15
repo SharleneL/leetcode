@@ -1,0 +1,31 @@
+import java.awt.List;
+import java.util.ArrayList;
+
+
+public class oct06_94 {
+
+	private static class TreeNode() {
+		int val;
+		TreeNode left;
+		TreeNode right;
+		
+		private TreeNode(int val) {
+			this.val = val;
+		}
+	}
+	
+    public List<Integer> inorderTraversal(TreeNode root) {
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        
+        // 1. exit
+        if(root == null)
+        	return null;
+
+        // process left
+        inorderTraversal(root.left);
+        // 2. process current node
+        result.add(root.val);
+        // 3. process right
+        inorderTraversal(root.right);
+    }
+}

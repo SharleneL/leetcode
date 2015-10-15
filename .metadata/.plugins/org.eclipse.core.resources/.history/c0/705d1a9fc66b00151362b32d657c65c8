@@ -1,0 +1,48 @@
+/*
+ * 深度为k的完全二叉树，至少有2^{k-1}个节点，至多有2^k-1个节点
+ * 深度为1则只有一个结点
+ * */
+
+public class oct05_easy111 {
+	
+//	class for tree node
+	private static class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+		
+		public TreeNode(int val) {
+			this.val = val;
+		}
+	}
+	
+	public static void main(String[] args) {
+//		test goes here
+//		construct the tree
+		TreeNode r1 = new TreeNode(1);
+		TreeNode r2 = new TreeNode(2);
+		TreeNode r3 = new TreeNode(3);
+		TreeNode r4 = new TreeNode(4);
+		TreeNode r5 = new TreeNode(5);
+		TreeNode r6 = new TreeNode(6);
+		
+		r1.left = r2;
+		r1.right = r3;
+		r2.left = r4;
+		r2.right = r5;
+//		r3.right = r6;
+		
+		System.out.println(minDepth(r1));
+	}
+	
+	
+//	SOLUTION STARTS HERE
+	
+    public static int minDepth(TreeNode root) {
+        if(root == null)
+        	return 0;
+        else
+        	return Math.min(minDepth(root.left), minDepth(root.right))+1;
+    }
+    
+}

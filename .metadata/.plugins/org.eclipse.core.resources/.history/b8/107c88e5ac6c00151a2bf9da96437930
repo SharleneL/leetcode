@@ -1,0 +1,15 @@
+
+public class oct06_94 {
+
+	public static class TreeNode() {
+		int val;
+		TreeNode left;
+		TreeNode right;
+		
+		private TreeNode (int val) {
+			this.val = val;
+		}
+	}
+	
+	
+}

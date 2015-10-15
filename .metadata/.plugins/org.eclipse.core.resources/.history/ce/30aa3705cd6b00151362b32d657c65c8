@@ -1,0 +1,22 @@
+
+public class oct05_104 {
+
+	private static class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+		
+		private TreeNode(int val){
+			this.val = val;
+		}
+	}
+	
+	public static void main(String[] args) {
+		// test goes here
+	}
+	
+    public int maxDepth(TreeNode root) {
+        
+    }
+	
+}

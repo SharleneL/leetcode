@@ -1,0 +1,24 @@
+
+public class oct14_203 {
+
+	private static class ListNode{
+		int val;
+		ListNode next;
+		public ListNode(int val){
+			this.val = val;
+		}
+	}
+	
+	public static void main(String[] args){
+		// test goes here
+	}
+	
+	public ListNode removeElements(ListNode head, int val) {
+		if(head==null)
+			return null;
+		
+		ListNode cur = head;
+		
+		
+    }
+}

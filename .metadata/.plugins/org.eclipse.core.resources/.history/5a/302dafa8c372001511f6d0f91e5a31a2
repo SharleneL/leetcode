@@ -1,0 +1,22 @@
+
+public class oct14_142 {
+
+	private static class ListNode{
+		int val;
+		ListNode next;
+		public ListNode(int val){
+			this.val = val;
+		}
+	}
+	
+	public static void main(String[] args){
+		// test goes here
+	}
+	
+	public ListNode detectCycle(ListNode head) {
+		if(head==null)
+			return false;
+		ListNode fast = head;
+		ListNode slow = head;
+    }
+}

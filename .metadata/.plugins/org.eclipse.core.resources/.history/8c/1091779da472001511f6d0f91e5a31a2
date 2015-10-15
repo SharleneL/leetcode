@@ -1,0 +1,9 @@
+
+public class oct14_160 {
+
+	private static class ListNode{
+		int val;
+		ListNode next;
+		
+	}
+}

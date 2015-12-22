@@ -1,4 +1,4 @@
-package LeetCodeTree_Medium;
+package LeetCodeBFS;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

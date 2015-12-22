@@ -1,4 +1,4 @@
-package LeetCodeTree_Medium;
+package LeetCodeBFS;
 
 /**
  * Created by luoshalin on 12/21/15.

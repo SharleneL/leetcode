@@ -1,36 +1,26 @@
-package LeetCodeTree_Medium;
+package LeetCodeBFS;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * Created by luoshalin on 12/21/15.
  */
 
-// 实质上是给一个directed graph, 如果里面没有环则输出它的拓扑排序
-// 注意从queue里面pop出来是逆序的,先用一个栈存,再倒到output arr里
+// 实质上是判断directed graph是否成环
+// 很好的参考:http://www.cnblogs.com/grandyang/p/4484571.html
 
-public class medium210 {
-
+public class medium207 {
     public static void main(String[] args){
         // test goes here
-        int numCourses = 2;
-        int pre[][] = {{0, 1}, {1, 0}};
+        int numCourses = 3;
+        int pre[][] = {{2, 0}, {2, 1}};
 
-        int res[] = findOrder(numCourses, pre);
-        for(int num : res)
-            System.out.println(num);
+        System.out.print(canFinish(numCourses, pre));
     }
 
-    public static int[] findOrder(int numCourses, int[][] prerequisites) {
-        int[] res = new int[numCourses];
-        Stack<Integer> resStack = new Stack<Integer>();
-
-        if(numCourses==0){
-            return res;
-        }
+    public static boolean canFinish(int numCourses, int[][] prerequisites) {
+        if(numCourses<=1 || prerequisites==null || prerequisites.length<=1)
+            return true;
 
         // initialization
         HashMap<Integer, HashSet<Integer>> graph = new HashMap<Integer, HashSet<Integer>>();    // store graph
@@ -59,8 +49,6 @@ public class medium210 {
         // poll zero-in-degree nodes from q one by one; find their outer nodes & (in-degree)--; if is new zero-in-degree-node add to q
         while(!q.isEmpty()){
             int cur = q.poll();
-            --numCourses;
-            resStack.push(cur);
             HashSet<Integer> set = graph.get(cur);
             for(int outNode : set){
                 in[outNode]--;
@@ -70,10 +58,37 @@ public class medium210 {
             }
         }
 
-        for(int i=0; i<res.length; i++){
-            if(!resStack.isEmpty())
-                res[i] = resStack.pop();
+        // now: q isEmpty; all zero-in-degree nodes in DAG are processed
+        for(int degree : in){
+            if(degree!=0)
+                return false;
         }
-        return numCourses == 0 ? res : new int[0];
+        return true;
     }
 }
+
+///*****Directed Gragph loop judgement*****/
+//store graph in map<int, set<int>> (store outer nodes in set)
+//store in-degree in arr in[]
+//
+//// save one level of node to be deleted
+//for each node i:
+//    if in[i] = 0:
+//        put node to q
+//    end if
+//end for
+//// find all outer nodes of in-degree=0 nodes && in-degree -- && add next level of in-degree=0 nodes to q
+//while(q ! empty)
+//    poll [i] from q
+//    for each outer node of [i]:
+//        in[i]--
+//        if in[i]=0:
+//            add to q
+//        end if
+//    end for
+//end while
+//// final judgement
+//if any elem of in[]!=0:
+//    there is a loop, return false
+//end if
+

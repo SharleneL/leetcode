@@ -11,11 +11,14 @@ public class nov23_easy14 {
 
     public static void main(String[] args){
         // test goes here
-        String[] strs = {"hello", "helllo", "he"};
+        String[] strs = {"llo", "helllo", "he"};
         System.out.println(longestCommonPrefix(strs));
     }
 
     public static String longestCommonPrefix(String[] strs) {
+        if(strs==null || strs.length==0)
+            return "";
+
         String preStr = strs[0];
 
         if(strs.length > 1){

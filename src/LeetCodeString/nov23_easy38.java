@@ -1,4 +1,4 @@
-package LeetCodeString_Easy;
+package LeetCodeString;
 
 // took too much time. need more clear thoughts.
 

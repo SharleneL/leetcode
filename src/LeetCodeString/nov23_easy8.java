@@ -1,4 +1,4 @@
-package LeetCodeString_Easy;
+package LeetCodeString;
 
 /**
  * Created by luoshalin on 11/23/15.
